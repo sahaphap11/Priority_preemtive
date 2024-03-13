@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">
+        <div class="container-header">
+            <div class="content">
+                <h1><span>Priority-preemptive</span></h1>
+            </div>
+            <div class="wrap-menu">
+                <div class="detail-Controller">
+                    <ul>
+                        <li><span>Clock :</span><span id="Clock">11110</span></li>
+                        <div class="wrapper">
+                            <li><span>CPU Process :</span><span id="Current-CPU-Process"></span></li>
+                            <li><span>I/O Process :</span><span id="Current-IO-Process"></span></li>
+                            <li><span>AVG Waitting :</span><span id="Current-AVG-Waiting"></span></li>
+                            <li><span>AVG Turnaround :</span><span id="Current-AVG-Turnaround"></span></li>
+                            <li><span>Memory :</span> 0%</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="site">
+        <div class="main-left">
+            <div class="head-main-left">
+                <h2>Job queue</h2>
+                <ul class="manage">
+                    <li class="add"><a href="#"><i class="ri-add-line"></i>Add Process</a></li>
+                    <li class="Terminate"><a href="#"><i class="ri-subtract-line"></i>Terminate</a></li>
+                   
+                </ul>
+            </div>
+            <div class="title-info" id="job-table">
+                <div class="table">
+                    <div class="header-table">
+                        <ul>
+                            <li>Process Name</li>
+                            <li>Arrival Time</li>
+                            <li>Priority</li>
+                            <li>Burst Time</li>
+                            <li>Waiting Time</li>
+                            <li>Memory<ii>
+                            <li>Status Process</li>
+                        </ul>
+                    </div>
+                    <div class="data-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right-middle">
+            <div class="box-ready-queue">
+                <div class="box-ready-header">
+                    <h2>I/O Queue</h2>
+                </div>
+                <div class="table">
+                    <div class="header-table">
+                        <ul>
+                            <li>Process Name</li>
+                            <li>Arrival Time</li>
+                            <li>Priority</li>
+                        </ul>
+                    </div>
+                    <div class="data-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right-bottom">
+            <div class="box-ready-queue">
+                <div class="box-ready-header">
+                    <h2>Ready Queue</h2>
+                </div>
+                <div class="table">
+                    <div class="header-table">
+                        <ul>
+                            <li>Process Name</li>
+                            <li>Arrival Time</li>
+                            <li>Priority</li>
+                        </ul>
+                    </div>
+                    <div class="data-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-left-bottom">
+            <div class="box-terminate">
+                <div class="box-ready-header">
+                    <h2>Terminate</h2>
+                </div>
+                <div class="table">
+                    <div class="header-table">
+                        <ul>
+                            <li>Process Name</li>
+                            <li>Arrival Time</li>
+                            <li>Priority</li>
+                            <li>Burst Time</li>
+                            <li>Waiting Time</li>
+                            <li>Turnaround Time</li>
+                            <li>I/O Time</li>
+                            <li>Respond Time</li>
+                            <li>Status Process</li>
+                        </ul>
+                    </div>
+                    <div class="data-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-right-upper">
+            <div class="box-ready-queue">
+                <div class="box-ready-header">
+                    <h2>I/O Device</h2>
+                    <ul class="manage">
+                        <li class="addd"><a><i class="ri-add-line"></i>Add</a></li>
+                        <li class="delete"><a><i class="ri-subtract-line"></i>Delete</a></li>
+                    </ul>
+                </div>
+                <div class="table">
+                    <div class="header-table">
+                        <ul>
+                            <li>Process Name</li>
+                            <li>Running Time</li>
+                            <li>Respond Time</li>
+                            <li>Status</li>
+                        </ul>
+                    </div>
+                    <div class="data-table">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="./Controller.js"></script>
+    
+</body>
+</html>
